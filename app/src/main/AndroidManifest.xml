@@ -20,7 +20,9 @@
         <activity
             android:name=".Menu"
             android:label="@string/title_activity_menu"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HighScores"></activity>
+        <activity android:name=".Settings"></activity>
     </application>
 
 </manifest>
