@@ -16,6 +16,8 @@ public class Menu extends Activity implements View.OnClickListener {
         buttonHighScores.setOnClickListener(this);
         Button buttonSettings = (Button) findViewById(R.id.buttonSettings);
         buttonSettings.setOnClickListener(this);
+        Button buttonToGame = (Button) findViewById(R.id.buttonToGame);
+        buttonToGame.setOnClickListener(this);
     }
 
     @Override
@@ -27,7 +29,11 @@ public class Menu extends Activity implements View.OnClickListener {
                 startActivity(i);
                 break;
             case R.id.buttonSettings:
-                i = new Intent(this, Settings.class);
+                i = new Intent(this, SettingsActivity.class);
+                startActivity(i);
+                break;
+            case R.id.buttonToGame:
+                i = new Intent(this, ToGame.class);
                 startActivity(i);
                 break;
         }

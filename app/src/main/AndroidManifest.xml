@@ -21,8 +21,20 @@
             android:name=".Menu"
             android:label="@string/title_activity_menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".HighScores"></activity>
-        <activity android:name=".Settings"></activity>
+        <activity android:name=".HighScores" />
+        <activity
+            android:name=".ToGame"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_to_game"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".SetupGame"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_setup_game"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>
