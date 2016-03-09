@@ -3,6 +3,7 @@ package mamahetogames.eliterisk;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.os.Handler;
 
 public class SplashScreen extends Activity {
 
@@ -11,17 +12,15 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        //Sleep toevoegen
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        //Menu openen
-        Intent i;
-        i = new Intent(this, Menu.class);
-        startActivity(i);
+        // Wacht 2500ms en ga door naar menu
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                Intent i;
+                i = new Intent(SplashScreen.this, Menu.class);
+                startActivity(i);
+            }
+        }, 2500);
 
     }
 

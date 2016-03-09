@@ -12,13 +12,11 @@
     tools:context="mamahetogames.eliterisk.SplashScreen"
     tools:showIn="@layout/activity_splash_screen">
 
-    <EditText
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_marginTop="108dp"
-        android:autoText="false"
-        android:text="hoooooi" />
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/eliterisk" />
 </RelativeLayout>
